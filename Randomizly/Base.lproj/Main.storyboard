@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TjM-nZ-ufI">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="Randomizly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Randomizly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GE-fO-Ewe">
+                                <rect key="frame" x="118" y="348" width="178" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRY-FX-hbN">
+                                <rect key="frame" x="190" y="417" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="7qP-Pw-9EN" kind="show" id="XoS-QN-OKO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pRY-FX-hbN" firstAttribute="top" secondItem="0GE-fO-Ewe" secondAttribute="bottom" constant="29" id="Aul-F8-dlg"/>
+                            <constraint firstItem="pRY-FX-hbN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ood-8t-Mef"/>
+                            <constraint firstItem="0GE-fO-Ewe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLN-mC-dYQ"/>
+                            <constraint firstItem="0GE-fO-Ewe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p07-tg-Kxa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8DQ-gU-lf3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1564" y="-26"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="FZj-J8-gCc">
+            <objects>
+                <viewController id="7qP-Pw-9EN" customClass="GameViewController" customModule="Randomizly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NCU-z3-Oh1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nML-Yr-anz">
+                                <rect key="frame" x="185.66666666666666" y="453" width="43" height="30"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guess:" destination="7qP-Pw-9EN" eventType="touchUpInside" id="vmy-yR-sad"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="noI-p0-KSy">
+                                <rect key="frame" x="157" y="373" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YcT-Ed-LKa"/>
+                                    <constraint firstAttribute="height" constant="30" id="u5H-k0-gHb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hintlabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ8-QV-eSv">
+                                <rect key="frame" x="173" y="327" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I’m thinking of a number between 1 and 100. Can you guess it?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gW-Ze-pMM">
+                                <rect key="frame" x="8" y="72" width="398" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1gW-Ze-pMM" firstAttribute="top" secondItem="OWc-fv-bbd" secondAttribute="top" constant="8" id="6ME-bQ-hok"/>
+                            <constraint firstItem="nML-Yr-anz" firstAttribute="top" secondItem="noI-p0-KSy" secondAttribute="bottom" constant="50" id="Cy8-3i-deJ"/>
+                            <constraint firstItem="noI-p0-KSy" firstAttribute="top" secondItem="gJ8-QV-eSv" secondAttribute="bottom" constant="25" id="H6j-Pq-Ijb"/>
+                            <constraint firstItem="gJ8-QV-eSv" firstAttribute="centerX" secondItem="NCU-z3-Oh1" secondAttribute="centerX" id="MG3-4w-arl"/>
+                            <constraint firstItem="1gW-Ze-pMM" firstAttribute="leading" secondItem="NCU-z3-Oh1" secondAttribute="leading" constant="8" id="MTD-O3-AX8"/>
+                            <constraint firstItem="nML-Yr-anz" firstAttribute="centerY" secondItem="NCU-z3-Oh1" secondAttribute="centerY" constant="100" id="RqQ-Y1-KSU"/>
+                            <constraint firstItem="nML-Yr-anz" firstAttribute="centerX" secondItem="NCU-z3-Oh1" secondAttribute="centerX" id="Wwe-Ht-Y2l"/>
+                            <constraint firstAttribute="trailing" secondItem="1gW-Ze-pMM" secondAttribute="trailing" constant="8" id="b7x-Ok-gUM"/>
+                            <constraint firstItem="noI-p0-KSy" firstAttribute="centerX" secondItem="NCU-z3-Oh1" secondAttribute="centerX" id="mJn-qJ-JVb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OWc-fv-bbd"/>
+                    </view>
+                    <connections>
+                        <outlet property="hintLabel" destination="gJ8-QV-eSv" id="VNW-vF-qao"/>
+                        <outlet property="inputField" destination="noI-p0-KSy" id="Pi9-fS-wkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETd-mz-neR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-786" y="-26"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="psH-Qm-yu3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TjM-nZ-ufI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r3K-ip-PEj">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NtH-eE-9XG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKA-2D-5kl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2304" y="-42"/>
+        </scene>
+    </scenes>
+</document>
