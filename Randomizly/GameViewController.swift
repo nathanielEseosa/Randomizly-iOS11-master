@@ -31,17 +31,20 @@ class GameViewController: UIViewController {
                 self.showAlert(title: "Victory", message: "You guessed the number correctly! Tries needed: \(tries)")
                 self.model.newNumber()
                 self.inputField.text = ""
-                self.hintLabel.isHidden = false
+                self.hintLabel.isHidden = true
             case .tooLow:
+                self.inputField.text = ""
                 self.hintLabel.text = "👆 HIGHER 📈"
                 self.hintLabel.isHidden = false
             case .tooHigh:
+                self.inputField.text = ""
                 self.hintLabel.text = "👇 LOWER 📉"
                 self.hintLabel.isHidden = false
             }
             print("Result: \(result), tries: \(tries)")
         } else {
             print("no input")
+            self.inputField.text = ""
             self.showAlert(title: "Error", message: "Enter a number!")
         }
     }

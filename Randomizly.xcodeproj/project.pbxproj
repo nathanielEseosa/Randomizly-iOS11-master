@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,6 @@
 		7CD414572084E3F700134D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD414552084E3F700134D4C /* Main.storyboard */; };
 		7CD414592084E3F700134D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD414582084E3F700134D4C /* Assets.xcassets */; };
 		7CD4145C2084E3F700134D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD4145A2084E3F700134D4C /* LaunchScreen.storyboard */; };
-		7CD414672084E3F700134D4C /* RandomizlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD414662084E3F700134D4C /* RandomizlyTests.swift */; };
-		7CD414722084E3F700134D4C /* RandomizlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD414712084E3F700134D4C /* RandomizlyUITests.swift */; };
 		AEA1743C20E80D4200757B35 /* RandomizlyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA1743B20E80D4200757B35 /* RandomizlyModel.swift */; };
 		AECAED8A20BD747A0052BBFE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECAED8920BD747A0052BBFE /* GameViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,19 +34,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7CD4144E2084E3F700134D4C /* Randomizly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD4144E2084E3F700134D4C /* Randomizly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Randomizly.app; path = "/Users/nathaniel.idahosa/Dropbox/Coding/Swift/Mimo/Randomizly-master/build/Debug-iphoneos/Randomizly.app"; sourceTree = "<absolute>"; };
 		7CD414512084E3F700134D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD414532084E3F700134D4C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7CD414562084E3F700134D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CD414582084E3F700134D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CD4145B2084E3F700134D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CD4145D2084E3F700134D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CD414622084E3F700134D4C /* RandomizlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomizlyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CD414662084E3F700134D4C /* RandomizlyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizlyTests.swift; sourceTree = "<group>"; };
-		7CD414682084E3F700134D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CD4146D2084E3F700134D4C /* RandomizlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomizlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CD414712084E3F700134D4C /* RandomizlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizlyUITests.swift; sourceTree = "<group>"; };
-		7CD414732084E3F700134D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD414622084E3F700134D4C /* RandomizlyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RandomizlyTests.xctest; path = "/Users/nathaniel.idahosa/Dropbox/Coding/Swift/Mimo/Randomizly-master/build/Debug-iphoneos/RandomizlyTests.xctest"; sourceTree = "<absolute>"; };
+		7CD4146D2084E3F700134D4C /* RandomizlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RandomizlyUITests.xctest; path = "/Users/nathaniel.idahosa/Dropbox/Coding/Swift/Mimo/Randomizly-master/build/Debug-iphoneos/RandomizlyUITests.xctest"; sourceTree = "<absolute>"; };
 		AEA1743B20E80D4200757B35 /* RandomizlyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizlyModel.swift; sourceTree = "<group>"; };
 		AECAED8920BD747A0052BBFE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,20 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD414502084E3F700134D4C /* Randomizly */,
-				7CD414652084E3F700134D4C /* RandomizlyTests */,
-				7CD414702084E3F700134D4C /* RandomizlyUITests */,
-				7CD4144F2084E3F700134D4C /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		7CD4144F2084E3F700134D4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7CD4144E2084E3F700134D4C /* Randomizly.app */,
-				7CD414622084E3F700134D4C /* RandomizlyTests.xctest */,
-				7CD4146D2084E3F700134D4C /* RandomizlyUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7CD414502084E3F700134D4C /* Randomizly */ = {
@@ -111,24 +92,6 @@
 				7CD4145D2084E3F700134D4C /* Info.plist */,
 			);
 			path = Randomizly;
-			sourceTree = "<group>";
-		};
-		7CD414652084E3F700134D4C /* RandomizlyTests */ = {
-			isa = PBXGroup;
-			children = (
-				7CD414662084E3F700134D4C /* RandomizlyTests.swift */,
-				7CD414682084E3F700134D4C /* Info.plist */,
-			);
-			path = RandomizlyTests;
-			sourceTree = "<group>";
-		};
-		7CD414702084E3F700134D4C /* RandomizlyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7CD414712084E3F700134D4C /* RandomizlyUITests.swift */,
-				7CD414732084E3F700134D4C /* Info.plist */,
-			);
-			path = RandomizlyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +158,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = Joseph;
+				ORGANIZATIONNAME = "Nathaniel Idahosa";
 				TargetAttributes = {
 					7CD4144D2084E3F700134D4C = {
 						CreatedOnToolsVersion = 9.2;
@@ -214,7 +177,7 @@
 				};
 			};
 			buildConfigurationList = 7CD414492084E3F700134D4C /* Build configuration list for PBXProject "Randomizly" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -222,7 +185,7 @@
 				Base,
 			);
 			mainGroup = 7CD414452084E3F700134D4C;
-			productRefGroup = 7CD4144F2084E3F700134D4C /* Products */;
+			productRefGroup = 7CD414452084E3F700134D4C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -276,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD414672084E3F700134D4C /* RandomizlyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD414722084E3F700134D4C /* RandomizlyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +386,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -437,8 +399,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ26JJ5D63;
 				INFOPLIST_FILE = Randomizly/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mimo.Randomizly;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appostolisch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,8 +417,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ26JJ5D63;
 				INFOPLIST_FILE = Randomizly/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mimo.Randomizly;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appostolisch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,7 +435,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RandomizlyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mimo.RandomizlyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -483,7 +455,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RandomizlyTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mimo.RandomizlyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -498,7 +474,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RandomizlyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mimo.RandomizlyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -513,7 +493,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RandomizlyUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = mimo.RandomizlyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
